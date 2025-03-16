@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.background{
+	 background:rgba(190, 24, 24, 0.589) url("background.png") ;
+     background-size: cover;
+	background-blend-mode: darken;
+     
+}
+.logo{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+	align-items: center;
+}
+.logo img{
+    /* width: 100%; */
+	height: 140px;
+	border-radius: 150px;
+	margin: 5px;
+}
+.navbar
+{
+    background-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* position: sticky; */
+	top: 0;
+	cursor: pointer;
+}
+ .nav-list{
+    /* width: 70%; */
+	display: flex; 
+	align-items: center;
+    
+}
+.nav-list li  {  
+    list-style-type: none;
+	text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+	padding: 10px 50px;
+}
+.nav-list li a
+{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-family: 'Ubuntu', sens-serif;
+}
+.nav-list li a:hover{
+    color:gray;
+    
+}
+.rightNav
+{
+	width: 30%;	
+	text-align: right;
+	padding: 0 23px;
+}
+#search{
+    padding: 5px;
+	font-size: 17px;
+	border: 2px solid grey;
+	border-radius: 9px;
+}
+.btn{
+    padding: 8px 20px;
+	margin: 7px 3px;
+	border: 2px solid white;
+	border-radius: 8px;
+	background: inherit;
+	color: white;
+	cursor: pointer;
+	font-family: 'Ubuntu', sens-serif;
+	font-size: 20px;
+}
+.btn-s{
+    text-decoration: none;
+    padding: 6px 10px;
+	vertical-align: middle;	
+	font-size:16px;
+}
+.burger:hover{
+	table-layout: auto;
+}
+.btn a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.btn :hover{
+    color: grey;
+}
+.reff{
+    height: 100vh;
+}
+.cr{
+    color:whitesmoke;
+    height: 20px;
+    width:50%;
+   position: relative;
+   left: 250px;
+   top: 150px;
+   font-size: 20px;
+   font-family:Arial, Helvetica, sans-serif ;
+
+}
+.cr h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.ig button{
+     position: relative;
+    left: 250px;
+    top: 300px; 
+    padding: 8px 20px;
+	margin: 7px 3px;
+	border: 2px solid white;
+	border-radius: 8px;
+	background: black;
+	
+	cursor: pointer;
+	font-family: 'Ubuntu', sens-serif;
+	font-size: 20px;
+
+}
+.ig a{
+   
+    text-decoration: none;
+    color: whitesmoke;
+}
+.ig button:hover{
+    background-color:grey ;
+}
+
+
+.middle{
+    background-color:grey;
+}
+
+.middle1{
+    max-width:70%;
+    max-height: 50%;
+    margin: 2px auto;
+    padding-bottom: 50px;
+}
+.middle2{
+    max-width:70%;
+    max-height: 50%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.middle3{
+    max-width:70%;
+    max-height: 50%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.middle h2{
+    font-size: 30px;
+    color: antiquewhite;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.middle p{
+    color: whitesmoke;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+
+
+.contact{
+    background-color: #f6f5f4;
+	height: auto;
+	padding-top: 10px;
+}
+.text-center
+{
+	text-align: center;
+}
+.form
+{
+	max-width: 62%;
+	margin: 25px auto;
+}
+.form-input
+{
+	margin: 14px 0px;
+	padding: 5px 13px;
+	width: 100%;
+	font-size: 19px;
+	border:2px solid grey;
+	border-radius: 6px;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.text-footer
+{
+	text-align: center;
+    background-color: black;
+	padding: 30px 0px; 
+	font-family: 'Ubuntu', sens-serif;
+	display: flex;
+	justify-content: center;
+	color:grey;
+}
+.img-s img{
+	height:120px;
+	width:120;
+	position: relative;
+	left: 700px;
+	top: 210px;
+	border: 2px solid whitesmoke;
+	border-radius: 100px;
+	
+
+}
+.burger
+{
+	position: absolute;
+	cursor: pointer;
+	right: 5%;
+	top: 15px;
+	display: none;
+}
+.line
+{
+	width: 33px;
+	background-color: white;
+	height: 4px;
+	margin: 5px 3px;
+}
+
+@media only screen and (max-width: 1140px) {
+	.logo{
+		height:auto;
+	}
+	
+	.nav-list
+	{
+		flex-direction: column;
+	}
+	.navbar
+	{
+		flex-direction: column;
+		transition:  all 0.7s ease-out;
+		height: 100px;
+	}
+	.rightNav
+	{
+		text-align: center;
+	}
+	.box_main
+	{
+		flex-direction: column-reverse;
+		max-width: 100%; 
+	}
+	#search
+	{
+		width: 100px;
+	}
+	.burger
+	{	
+		display: block;
+	}
+	.h-nav
+	{
+		height: 72px;
+	}
+	.v-class
+	{
+		opacity: 0;
+	}
+	.middle
+	{
+		flex-direction: column-reverse;
+	}
+	
+	.button
+	{
+		text-align: center;
+	}
+	.middle-m
+	{
+		padding: 0px;
+	}
+
+    
+}
+
+
